@@ -1,6 +1,14 @@
 # AngularApp
+ 
+ "Angular - The Complete Guide" - A Udemy Course by Maximilian Schwarzmüller
+ 
+ ## Acknowledgements
+ 
+- **Maximilian Schwarzmüller**, at [Academind.com](https://academind.com/), for making this course available on [Udemy](https://www.udemy.com/course/the-complete-guide-to-angular-2)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
+## Description
+
+An Angular project of the course, generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
 
 ## Development server
 
