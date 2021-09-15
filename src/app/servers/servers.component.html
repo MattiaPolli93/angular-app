@@ -5,7 +5,13 @@
 <!-- <p>{{ serverName }}</p> -->
 <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button>
 <!-- <p [innerText]="allowNewServer"></p> -->
-<p>{{ serverCreationStatus }}</p>
+<!-- <p>{{ serverCreationStatus }}</p> -->
+<p *ngIf="serverCreated; else noServer">Server was created, its name being {{ serverName }}</p>
+<ng-template #noServer>
+    <p>No Server was created!</p>
+</ng-template>
+
+<app-server *ngFor="let server of servers"></app-server>
 
 <hr>
 
@@ -14,6 +20,3 @@
 <p [innerText]="userName"></p>
 
 <button class="btn btn-danger" [disabled]="userName === ''" (click)="userName = ''"><strong>Reset</strong></button>
-
-<app-server></app-server>
-<app-server></app-server>
