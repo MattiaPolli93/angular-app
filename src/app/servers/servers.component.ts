@@ -12,6 +12,8 @@ export class ServersComponent implements OnInit {
     serverCreated = false;
     servers = [];
     serverName = "";
+    details = false;
+    clicks = [];
     userName = "";
 
     constructor() {
@@ -31,6 +33,12 @@ export class ServersComponent implements OnInit {
 
     onUpdateServerName(event: Event) {
         this.serverName = (<HTMLInputElement>event.target).value;
+    }
+
+    displayDetails() {
+        this.details = !this.details;
+        // this.clicks.push(this.clicks.length + 1);
+        this.clicks.push(new Date());
     }
 
 }

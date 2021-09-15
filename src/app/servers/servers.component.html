@@ -15,6 +15,12 @@
 
 <hr>
 
+<button class="btn" (click)="displayDetails()">Display Details - Date (Number of Clicks)</button>
+<p *ngIf="details">Secret Password = sunflower</p>
+<div *ngFor="let click of clicks; let i = index" [ngStyle]="{backgroundColor: i >= 4 ? 'black' : transparent}" [ngClass]="{'white-bold-text': i >= 4}">{{ click }}</div>
+
+<hr>
+
 <label>Username</label>
 <input type="text" class="form-control" [(ngModel)]="userName">
 <p [innerText]="userName"></p>
