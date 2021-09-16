@@ -1,4 +1,4 @@
-# AngularApp
+# Angular App
  
  "Angular - The Complete Guide" - A Udemy Course by Maximilian Schwarzmüller
  
@@ -8,7 +8,7 @@
 
 ## Description
 
-An Angular project of the course, generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
+The Angular project of the course, generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
 
 ## Development server
 
